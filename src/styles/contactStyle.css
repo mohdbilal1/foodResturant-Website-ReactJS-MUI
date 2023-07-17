@@ -1,0 +1,25 @@
+
+.contact-div{
+    height: 50vh;  
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+  }
+  
+  .content-div{
+      margin-left: 200px;
+      justify-content: center;
+      padding-top: 100px;
+      width: auto;
+      font-size: xx-large;
+      color: rgb(0, 0, 0);
+      text-shadow: 2px 2px rgb(243, 4, 4);
+      
+  
+  }
+  .content-div p{
+    padding-bottom: 10px;
+    text-shadow: 2px 2px #df0909;
+    
+  }

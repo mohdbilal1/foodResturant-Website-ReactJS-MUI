@@ -1,8 +1,9 @@
-import { AppBar, Box, Divider, Drawer, IconButton, Link, List, Toolbar, Typography } from "@mui/material"
+import { AppBar, Box, Divider, Drawer, IconButton,List, Toolbar, Typography } from "@mui/material"
 import FoodBankIcon from '@mui/icons-material/FoodBank';
 import MenuIcon from '@mui/icons-material/Menu';
 import '../../styles/HeaderStyles.css';
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
     const [mobileOpen, setMobileOpen] = useState(false)
@@ -32,16 +33,16 @@ function Navbar() {
            <Divider/>
                 <List className="mobile-nav">
                     <li>
-                        <Link to={'/'}>Home</Link>
+                        <NavLink to='/'>Home</NavLink>
                     </li>
                     <li>
-                        <Link to={'/menu'}>Menu</Link>
+                        <NavLink to='/menu'>Menu</NavLink>
                     </li>
                     <li>
-                        <Link to={'/about'}>About</Link>
+                        <NavLink to={'/about'}>About</NavLink>
                     </li>
                     <li>
-                        <Link to={'/contact'}>Contact</Link>
+                        <NavLink to={'/contact'}>Contact</NavLink>
                     </li>
 
                 </List>
@@ -52,13 +53,13 @@ function Navbar() {
         <>
             <Box>
                 <AppBar>
-                    <Toolbar>
+                    <Toolbar sx={{height:'80px'}}>
                         <IconButton
                             color="inherit"
                             sx={{ mb: 1, display: { sm: 'none' } }}
                             edge='start'
                             aria-label="open drawer"
-                            size="medium"
+                            size="large"
                             onClick={handleDrawer}
                         >
                             <MenuIcon />
@@ -70,7 +71,7 @@ function Navbar() {
                             sx={{ flexGrow: 1 }}
 
                         >
-                            <IconButton sx={{ mb: 1 }} size="medium" color="inherit">
+                            <IconButton sx={{ mb: 1 }} size="x-large" color="inherit">
                                 <FoodBankIcon />
                             </IconButton>
                             Al-Baik Resturant
@@ -78,16 +79,16 @@ function Navbar() {
                         <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                             <List className="navbar" sx={{ display: "flex" }}>
                                 <li>
-                                    <Link to={'/'}>Home</Link>
+                                    <NavLink to={'/'}>Home</NavLink>
                                 </li>
                                 <li>
-                                    <Link to={'/menu'}>Menu</Link>
+                                    <NavLink to={'/menu'}>Menu</NavLink>
                                 </li>
                                 <li>
-                                    <Link to={'/about'}>About</Link>
+                                    <NavLink to={'/about'}>About</NavLink>
                                 </li>
                                 <li>
-                                    <Link to={'/contact'}>Contact</Link>
+                                    <NavLink to={'/contact'}>Contact</NavLink>
                                 </li>
 
                             </List>
@@ -105,7 +106,7 @@ function Navbar() {
                         {drawer}
                     </Drawer>
                 </Box>
-                <Toolbar/>
+                <Toolbar sx={{mt:5}}/>
             </Box>
         </>
     )
