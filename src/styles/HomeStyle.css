@@ -1,0 +1,13 @@
+
+.homepage{
+  height: 90vh;  
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.homecontainer{
+    margin-left: 30px;
+    width: auto;
+}
