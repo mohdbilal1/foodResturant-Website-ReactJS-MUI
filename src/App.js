@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import About from './pages/About';
-import Menu from './pages/Menu';
-import Contact from './pages/Contact';
-import Errorpage from './pages/Errorpage';
+import Home from './Components/Home';
+import About from './Components/About';
+import Menu from './Components/Menu';
+import Contact from './Components/Contact';
+import Errorpage from './Components/Errorpage';
 
 const App = () => {
 
