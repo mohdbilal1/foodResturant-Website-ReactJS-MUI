@@ -23,10 +23,9 @@ function Navbar() {
                 sx={{padding:'10px 0',textAlign:'center' }}
                 width={250}
                 
-
             >
                 <IconButton sx={{ mb: 1 }} color="inherit">
-                    <FoodBankIcon />
+                    <FoodBankIcon/>
                 </IconButton>
                 Al-Baik Resturant
             </Typography>
