@@ -15,9 +15,9 @@ function Navbar() {
     //menu drawer
     const drawer = (
         <Box onClick={handleDrawer}>
-            <Typography
+            <Typography 
                 color={'white'}
-                bgcolor={'blue'}
+                bgcolor ={'blue'}
                 variant="h6"
                 component='div'
                 sx={{padding:'10px 0',textAlign:'center' }}
